@@ -1,0 +1,72 @@
+html {
+    background-color: #686de0;
+    background-size: cover;
+    font-family: 'Open Sans';
+    text-align: center;
+    font-size: 10px;
+  }
+
+  body {
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+  }
+
+  .clock {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+    background: #686de0;
+    box-shadow: 5px 5px 10px #585dbe,
+      -5px -5px 10px #787dff;
+  }
+
+  .clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+    /* account for the height of the clock hands */
+  }
+
+  .hand {
+    width: 50%;
+    height: 6px;
+    border-radius: 50em;
+    background: #686de0;
+    box-shadow: inset 5px 5px 10px #5c60c5,
+      inset -5px -5px 10px #747afb;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: ease-in-out 0.05s;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    color: #fff;
+    font-size: .7em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .foot {
+    color: white;
+    transition: .5s ease;
+  }
+
+  .foot:hover {
+    color: #e0db68;
+    transition: .5s ease;
+  }
